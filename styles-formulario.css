@@ -1,28 +1,28 @@
 /* Seccion Formulario */
 .Ayuda-general{
-    background-color:aquamarine;
+    background-color: #ffe8e8; /* lavanda muy suave */
     padding: 2.5rem;
-    padding-top:100px;
-    border: 2px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
+/* Contenedor del formulario */
 .div-ayuda-formulario{
-    justify-content: center;
-    background-color: coral;
+    background-color: #ffffff; /* blanco */
     padding: 1.875rem;
-    border : 3px solid black;
+    border: 2px solid #ffb6a4; /* borde púrpura suave */
+    border-radius: 10px;
     width: 100%;
     max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .campo{
-    background-color: aqua;
+    background-color: #ffe8e8; /* fondo lilac suave */
     padding: 0.938rem;
-    border: 1px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
@@ -30,29 +30,48 @@
     display: flex;
     font-weight: bold;
     margin-bottom: 8px;
-    font-size: 18px;
+    font-size: 1.1rem;
+    color: #a3a08a; /* púrpura oscuro */
 }
 
-/*Para las cajas input select */
-.Formulario input[type="text"], .Formulario select {
+/* Inputs y selects */
+.Formulario input[type="text"], 
+.Formulario select {
     width: 100%;
-    padding: 0.125rem;
-    border: 1px solid black;
-    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid #d6db9d;
+    border-radius: 6px;
+    background-color: #ffffff;
     box-sizing: border-box;
+    outline: none;
+    transition: 0.2s ease;
 }
 
-.Lista-checkbox, .Lista-radio{
+.Formulario input[type="text"]:focus,
+.Formulario select:focus {
+    border-color: #81924f;
+    box-shadow: 0 0 5px rgba(27, 154, 52, 0.4);
+}
+
+.Lista-checkbox, 
+.Lista-radio {
     list-style: none;
     padding: 0.625rem;
-    margin:0;
-    border:1px;
+    margin: 0;
 }
 
 .Formulario button {
-    background-color: aquamarine;
-    color: black;
+    background-color: #89aa24; /* púrpura vibrante */
+    color: white;
     padding: 0.625rem 1.25rem;
-    border-radius: 5px;
+    border-radius: 6px;
+    border: none;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.Formulario button:hover {
+    background-color: #9a1b1b;
 }
