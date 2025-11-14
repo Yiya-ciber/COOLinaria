@@ -22,7 +22,7 @@
   text-decoration: none;
   color: rgb(255, 231, 231);
   display: block;
-  padding: 5px 20px;
+  padding:  0.625rem 1.25rem;
 }
 
 .Menu-Horizontal li a:hover {
@@ -45,7 +45,7 @@
 
 /* SECCION CREAR UN GRUPO */
 .registrar_grupo {
-  padding: 90px 20px 5px;
+  padding: 6.25rem 0.125rem 0.313rem;
   background-color: #9ec950;
 }
     
