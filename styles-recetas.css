@@ -1,0 +1,122 @@
+/* ==============================
+   SECCIÓN RECETAS
+   ============================== */
+
+.recetas {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: #fff;
+}
+
+.recetas h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Contenedor general */
+.contenedor-categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+/* Tarjetas */
+.categoria {
+  background: #fafafa;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.categoria:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.categoria h2 {
+  font-size: 1.8rem;
+  color: #ff7a00;
+  margin-bottom: 1rem;
+}
+
+.categoria ul li {
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* ==============================
+   SECCIÓN INFO DE CAMBIOS
+   ============================== */
+.Info-cambios-proyectos {
+  background: linear-gradient(135deg, #ffe8d9, #ffd2b5);
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+  border-radius: 1.5rem;
+}
+
+.Info-cambios-proyectos h2 {
+  text-align: center;
+  color: #3b3b3b;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* Contenedor general */
+.div-camb-general {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+/* Imagen */
+.div-camb-imagen {
+  flex: 1 1 30rem;
+}
+
+.div-camb-imagen img {
+  width: 100%;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.6rem 1.6rem rgba(0,0,0,0.15);
+}
+
+/* Texto */
+.div-camb-texto {
+  flex: 1 1 30rem;
+}
+
+.div-camb-texto p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #3b3b3b;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+@media (max-width: 40rem) {
+  .recetas h1 {
+    font-size: 2rem;
+  }
+
+  .Info-cambios-proyectos h2 {
+    font-size: 1.8rem;
+  }
+
+  .div-camb-texto p {
+    font-size: 1.3rem;
+  }
+}
